@@ -71,7 +71,7 @@ public class Student {
 
     //信息确认
     public boolean commit(String stuName, int password) {
-        if (this.stuName == stuName && this.password == password) {
+        if (this.stuName.equals(stuName) && this.password == password) {
             return true;
         } else {
             return false;
