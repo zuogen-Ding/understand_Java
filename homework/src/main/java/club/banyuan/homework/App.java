@@ -4,10 +4,18 @@ package club.banyuan.homework;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+class Parent {
+    public void count() {
+        System.out.println(10%3);
     }
 }
+class Child  extends Parent{
+    public void count() {
+        System.out.println(10/3);
+    }
+    public static void main(String args[]) {
+        Parent p = new Child();
+        p.count();
+    }
+}
+
