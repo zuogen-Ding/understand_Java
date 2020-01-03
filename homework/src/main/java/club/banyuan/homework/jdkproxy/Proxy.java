@@ -15,6 +15,6 @@ public class Proxy implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object o   = method.invoke(teach,args);
 
-        return  0;
+        return  o;
     }
 }
